@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Computer Science Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Sep 2023 15:13:16 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 11:49:40 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>二进制、十进制、十六进制的基本知识</title>
+      <link>https://tomthethuan.github.io/post/numberbasereview/</link>
+      <pubDate>Sat, 23 Sep 2023 11:49:40 +0800</pubDate>
+      
+      <guid>https://tomthethuan.github.io/post/numberbasereview/</guid>
+      <description>Binary System Binary Units in binary: Understanding Denary / Decimal system How the number system works Convert binary to denary Convert denary to binary Hexadecimal System Understanding Hexadecimal Why are we using Hex? The uses of Hexadecimal in computing Hexadecimal in HTML colours Hexadecimal in MAC address Hexadecimal in Machine Code and Assemble Language Binary System Learning Ojectives
+define the terms bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte Understand that data needs to be converted into a binary format to be processed by a computer Convert positive denary whole numbers into 8-bit or 16-bit binary numbers and vice vers a Explain the use 0f binary codes in computer registers Binary Computers read and interpret data differently.</description>
+    </item>
+    
     <item>
       <title>十六进制的用途</title>
       <link>https://tomthethuan.github.io/post/hexuses/</link>
