@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 23 Sep 2023 11:49:40 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二进制、十进制、十六进制的基本知识</title>
-      <link>https://tomthethuan.github.io/post/numberbasereview/</link>
+      <link>https://tomthethuan.github.io/docs/numberbasereview/</link>
       <pubDate>Sat, 23 Sep 2023 11:49:40 +0800</pubDate>
       
-      <guid>https://tomthethuan.github.io/post/numberbasereview/</guid>
+      <guid>https://tomthethuan.github.io/docs/numberbasereview/</guid>
       <description>Binary System Binary Units in binary: Understanding Denary / Decimal system How the number system works Convert binary to denary Convert denary to binary Hexadecimal System Understanding Hexadecimal Why are we using Hex? The uses of Hexadecimal in computing Hexadecimal in HTML colours Hexadecimal in MAC address Hexadecimal in Machine Code and Assemble Language Binary System Learning Ojectives
 define the terms bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte Understand that data needs to be converted into a binary format to be processed by a computer Convert positive denary whole numbers into 8-bit or 16-bit binary numbers and vice vers a Explain the use 0f binary codes in computer registers Binary Computers read and interpret data differently.</description>
     </item>
@@ -28,10 +28,10 @@ define the terms bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte Under
     
     <item>
       <title>十六进制的用途</title>
-      <link>https://tomthethuan.github.io/post/hexuses/</link>
+      <link>https://tomthethuan.github.io/docs/hexuses/</link>
       <pubDate>Fri, 15 Sep 2023 15:13:16 +0800</pubDate>
       
-      <guid>https://tomthethuan.github.io/post/hexuses/</guid>
+      <guid>https://tomthethuan.github.io/docs/hexuses/</guid>
       <description>计算机只能使用二进制数据。 虽然计算机科学家可以使用二进制，但他们发现十六进制更方便使用。 这是因为一个十六进制数字代表四个二进制数字。 复杂的二进制数，如0000111111101，可以用十六进制写成21FD。
 十六进制数对人类来说更容易记住、复制和处理。 以下是十六进制系统的四种用途：
 表示错误码 表示MAC地址 表示IPv6地址 表示HTML 颜色代码 错误码 错误代码通常显示为十六进制值。这些数字指的是错误的内存位置，通常由计算机自动生成。
