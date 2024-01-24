@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Computer Science Notes</title>
+    <title>TTThuan Blog</title>
     <link>https://tomthethuan.github.io/</link>
-    <description>Recent content on Computer Science Notes</description>
+    <description>Recent content on TTThuan Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Sep 2023 11:49:40 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Jan 2024 10:35:51 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>二进制、十进制、十六进制的基本知识</title>
-      <link>https://tomthethuan.github.io/docs/numberbasereview/</link>
-      <pubDate>Sat, 23 Sep 2023 11:49:40 +0800</pubDate>
+      <title>Computer Science: My favorite subject and it&#39;s secrets</title>
+      <link>https://tomthethuan.github.io/posts/myfavoritesubject-en/</link>
+      <pubDate>Mon, 22 Jan 2024 10:35:51 +0800</pubDate>
       
-      <guid>https://tomthethuan.github.io/docs/numberbasereview/</guid>
-      <description>Binary System Binary Units in binary: Understanding Denary / Decimal system How the number system works Convert binary to denary Convert denary to binary Hexadecimal System Understanding Hexadecimal Why are we using Hex? The uses of Hexadecimal in computing Hexadecimal in HTML colours Hexadecimal in MAC address Hexadecimal in Machine Code and Assemble Language Binary System Learning Ojectives
-define the terms bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte Understand that data needs to be converted into a binary format to be processed by a computer Convert positive denary whole numbers into 8-bit or 16-bit binary numbers and vice vers a Explain the use 0f binary codes in computer registers Binary Computers read and interpret data differently.</description>
+      <guid>https://tomthethuan.github.io/posts/myfavoritesubject-en/</guid>
+      <description>Computer science, a subject that may seem extremely profound just by its name, is actually a subject that includes all the things in the digital world. As a scientific discipline, like other traditional science subjects, physics is a discipline that focuses on studying matter, energy, space, and time; Biology is a discipline that focuses on studying life related topics; Chemistry is a discipline that studies the composition and changes of substances; Similarly, computer science is a specialized discipline that studies everything related to electronic devices.</description>
+    </item>
+    
+    <item>
+      <title>计算机科学：我最喜欢的学科，以及关于它的一些冷知识</title>
+      <link>https://tomthethuan.github.io/posts/myfavoritesubject-zh/</link>
+      <pubDate>Mon, 22 Jan 2024 10:35:51 +0800</pubDate>
+      
+      <guid>https://tomthethuan.github.io/posts/myfavoritesubject-zh/</guid>
+      <description>计算机科学，一门光是名字就让人感觉极其深奥的学科，但是实则是一门囊括了电子世界所有广义事物的一门学科。作为一门“科学”学科，它和其他的学科一样，物理是一门着重于研究物质、能量、空间、时间的一门学科；生物是一门着重于研究生命相关的学科；化学是一门研究物质构成与变化的一门学科；同理，计算机科学是一门专门研究一切与“计算机”有关的学科。
+计算机科学所包括的内容其实非常广泛，现代社会中所有和电子设备相关的事物都和计算机科学相关。比如说我们平常用的软件囊括在了“软件”、“编程”等大类下，以及我们用的手机电脑属于“硬件”这一大类下，除了平常能接触得到的这些“常见事物”，计算机科学经常出现在许多平常人不会轻易发现的领域，比如网络安全、数据分析、人工智能、软件工程、安全与密码学、算法与逻辑等等。那么既然有那么多方面的内容要学，该从什么方面入手呢？
+我不能说是一个计算机科学领域的天才，但至和同龄人相比还是有点水平的。在我真正系统化学习计算机科学之前，我就接触过了许多有关的知识，比如最基本的二进制、文件系统、代码编写等。而这些知识来源于我的一些个人爱好——喜欢捣鼓电脑。我喜欢电脑不是因为电脑上的游戏，也不是因为有什么好看的电视，而是纯粹喜欢在电脑上尝试一些没有试过的东西。有时候，我可能会为了一时间突然想到的点子去折腾个好几个小时，乃至几天，在一次次的失败中和解决问题中，我渐渐熟悉了有关我所接触到的一切。两年的时间里，我几乎接触到了有关课程大纲的所有内容，虽然我没有系统地学过，也没有刻意去超前学，但我就是在这样的课程里如鱼得水一般，所有学到的知识点都能在我之前接触过的内容中找多归宿。
+有些人觉得我这样的描述有些太夸张了，但是这其实非常简单和清晰。相较与其他的几门科学学科，计算机科学算是最新的一门学科，鉴于他的特殊性，现在学的这些内容都很基础：有些看似复杂的知识点，经过梳理之后就会变得非常简单。想要理解一个知识点，只要记住有关它的因果关系就行了，而这一点正是许多完全不同懂的初学者不理解的一个地方，所以我认为老师作为一个教育者，可以试着从一个很基本的问题出发，然后循序渐进地引入许多知识点，利用一个特定的案例引申到普遍的场景里，举一反三。这是我在不停地犯错和改正的过程中学到的——我曾经因为一个我从未见过的知识点而感到害怕，担心自己绞尽脑汁也想不明白，更不想在这件事情上走很多弯路，浪费时间的同时浪费精力。因为我经历过对于知识点而感到无力的感觉，所以我不希望别人也重蹈我的覆辙。
+为了帮助有和我相似经历的人，我经常会帮助有困难的同学，帮助他们解答一些不明白的知识点。其实有些人不明白的问题不是因为知识点太难，而是因为他们没有将他们学到的零散知识点结合在一起，而我为他们做的都知识细细的重新讲一遍课上讲过的知识，并在他们不明白的地方加以解释，知道理解位置。也许是因为许多知识点是自学的原因，我能大致知道别人是什么地方遇到了困难，也知道怎么用自己的方式去解释然后理解并掌握这个知识点。我希望在今后的学习中，能够持续他人做出贡献，因为平心而论，这些知识点清晰但是并不简单，想要依靠自己的力量完全掌握要耗费大量的时间。所以，为了创建一个更高效的学习环境，我认为同样学习这个学科的同学们可以互相帮助，解答对方不懂的地方，并吸收他人的想法。
+我和计算机科学的关系可以大致分为三个阶段，从完全不理解的第一阶段到渐渐明白计算机科学的本质，通过不断地主动学习。然后在学习新知识的同时再以向他人解答问题的方式巩固以前的知识点。这样的循环式学习法让我在计算机科学领域小有成就，我觉得这样的学习周期同样可以运用在其他的学科中，让我在其他学科中进步。</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
+      <link>https://tomthethuan.github.io/sekiro-mods/welcome/</link>
+      <pubDate>Mon, 20 Nov 2023 21:50:50 +0800</pubDate>
+      
+      <guid>https://tomthethuan.github.io/sekiro-mods/welcome/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -23,30 +45,26 @@ define the terms bit, nibble, byte, kilobyte, megabyte, gigabyte, terabyte Under
       <pubDate>Fri, 15 Sep 2023 15:45:57 +0800</pubDate>
       
       <guid>https://tomthethuan.github.io/about/</guid>
-      <description>About </description>
+      <description>这个是用hugo驱动的一个网站，用的是Paper-Mod的一个主题。由于自己写html时一点想法都没有，便找了个比较好用的生成器去写，也就是现在这个。
+本人是一名学生，可能以后会在这个上面分享一些知识，或者一些和游戏有关的内容。因为是学生嘛，不一定有时间经常更新，也很有可能再以后把这个网站给荒废掉。但是我希望能把这个网站坚持下去，把自己属于互联网的爱好坚持下去。</description>
     </item>
     
     <item>
-      <title>十六进制的用途</title>
-      <link>https://tomthethuan.github.io/docs/hexuses/</link>
-      <pubDate>Fri, 15 Sep 2023 15:13:16 +0800</pubDate>
+      <title></title>
+      <link>https://tomthethuan.github.io/sekiro-mods/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://tomthethuan.github.io/docs/hexuses/</guid>
-      <description>计算机只能使用二进制数据。 虽然计算机科学家可以使用二进制，但他们发现十六进制更方便使用。 这是因为一个十六进制数字代表四个二进制数字。 复杂的二进制数，如0000111111101，可以用十六进制写成21FD。
-十六进制数对人类来说更容易记住、复制和处理。 以下是十六进制系统的四种用途：
-表示错误码 表示MAC地址 表示IPv6地址 表示HTML 颜色代码 错误码 错误代码通常显示为十六进制值。这些数字指的是错误的内存位置，通常由计算机自动生成。
-MAC地址 媒体访问控制（MAC）地址是指唯一标识网络上设备的数字。MAC地址是指作为设备一部分的网络接口卡（NIC）。MAC地址很少更改，因此无论设备在哪里，都可以始终被识别。
-MAC地址通常由48位组成，显示为6组两个十六进制数字（尽管也存在64位地址）：
-NN - NN - NN - DD - DD - DDorNN:NN:NN:DD:DD:DD
-其中前半部分NN - NN - NN是设备制造商的身份编号，后半部分DD - DD - DD是设备的序列号。
-例如：00 - 1C - B3 - 4F - 25 - FE 是苹果公司生产的设备的MAC地址（代码：001CB3），序列号为：4F25FE。MAC地址中经常使用小写十六进制字母：00-1c-b3-4f-25-fe。其他制造商识别号包括：
-00 – 14 – 22，用于识别戴尔制造的设备 00 – 40 – 96，用于识别思科制造的设备 00 – a0 – c9，用于识别英特尔制造的设备
-IPv6地址 每个连接到网络的设备都有一个称为互联网协议（IP）地址的地址。IPv4地址是以十进制（109.108.158.1）或十六进制（77.76.9e.01）形式书写的32位数字。通过采用IPv6，IPv4最近得到了改进。IPv6地址是一个128位数字，分解为16位块，由十六进制数字表示。例如：
-a8fb:7a88:fff0:0fff:3d21:2085:66fb:f0fa
-请注意，IPv6使用冒号（：）分割某一段数字，而不是IPv4中使用的小数点（.）。
-HTML颜色代码 超文本标记语言（HTML）用于编写和开发网页。HTML不是一种编程语言，而只是一种标记语言。标记语言用于文本的处理、定义和呈现（例如，指定文本的颜色）。
-HTML使用&amp;lt;tags&amp;gt;，用于将一段文本括起来，例如，&amp;lt;h1&amp;gt;和&amp;lt;/h1&amp;gt;包围顶级标题。两个标签之间的任何内容都被定义为顶级标题级别。以下是HTML代码的简短示例（不要求完全掌握）：</description>
+      <guid>https://tomthethuan.github.io/sekiro-mods/untitled/</guid>
+      <description>傀儡手里剑开发记录 param更改说明：
+text更改说明：
+ID 70100
+Title 傀儡手里剑
+Summary
+能積通过附着傀儡之术操控敌人的强化手裏劍可透過消耗紙人發動快速掷出时将敌人化为自己的傀儡蓄力投擲出的飛刃可削弱敵方的ＨＰ與軀幹值更可對跳躍移動的敵方造成大幅傷害以彈簧機關積蓄旋轉力道再射出附着傀儡之术的飛刃在用力掷出擊中後仍會持續旋轉切刺敵方旋转时会失去傀儡效果，但会像帶有刀刃的陀螺繞著螺旋一般切割敌人 Description
+&amp;lt;?kgiconKc@17?&amp;gt;：使用傀儡手裏劍攻擊射出傀儡手裏劍&amp;lt;?kgiconKc@17?&amp;gt;長按：迴旋攻擊蓄積旋轉力道射出手裏劍可對敵人進行連續攻擊 </description>
     </item>
+    
+    
     
   </channel>
 </rss>

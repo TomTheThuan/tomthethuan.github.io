@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sekiro-mods on TTThuan Blog</title>
+    <link>https://tomthethuan.github.io/sekiro-mods/</link>
+    <description>Recent content in Sekiro-mods on TTThuan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Nov 2023 21:50:50 +0800</lastBuildDate><atom:link href="https://tomthethuan.github.io/sekiro-mods/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>https://tomthethuan.github.io/sekiro-mods/welcome/</link>
+      <pubDate>Mon, 20 Nov 2023 21:50:50 +0800</pubDate>
+      
+      <guid>https://tomthethuan.github.io/sekiro-mods/welcome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tomthethuan.github.io/sekiro-mods/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tomthethuan.github.io/sekiro-mods/untitled/</guid>
+      <description>傀儡手里剑开发记录 param更改说明：
+text更改说明：
+ID 70100
+Title 傀儡手里剑
+Summary
+能積通过附着傀儡之术操控敌人的强化手裏劍可透過消耗紙人發動快速掷出时将敌人化为自己的傀儡蓄力投擲出的飛刃可削弱敵方的ＨＰ與軀幹值更可對跳躍移動的敵方造成大幅傷害以彈簧機關積蓄旋轉力道再射出附着傀儡之术的飛刃在用力掷出擊中後仍會持續旋轉切刺敵方旋转时会失去傀儡效果，但会像帶有刀刃的陀螺繞著螺旋一般切割敌人 Description
+&amp;lt;?kgiconKc@17?&amp;gt;：使用傀儡手裏劍攻擊射出傀儡手裏劍&amp;lt;?kgiconKc@17?&amp;gt;長按：迴旋攻擊蓄積旋轉力道射出手裏劍可對敵人進行連續攻擊 </description>
+    </item>
+    
+  </channel>
+</rss>
