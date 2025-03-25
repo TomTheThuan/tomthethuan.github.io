@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Excretion in Humans - Drag & Drop Game</title>
+
+  <style>
+
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f0f8ff; }
+
+    h2 { color: #2c3e50; }
+
+    .container { display: flex; flex-wrap: wrap; gap: 20px; }
+
+    .column { flex: 1; min-width: 45%; }
+
+    .box {
+
+      background: #fff;
+
+      border: 2px solid #3498db;
+
+      border-radius: 10px;
+
+      padding: 10px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .draggable {
+
+      background: #ecf0f1;
+
+      border: 1px solid #95a5a6;
+
+      padding: 8px;
+
+      margin: 5px 0;
+
+      cursor: move;
+
+      border-radius: 6px;
+
+    }
+
+    .droptarget {
+
+      min-height: 40px;
+
+      background: #eaf7ff;
+
+      border: 2px dashed #95a5a6;
+
+      padding: 10px;
+
+      margin: 5px 0;
+
+      border-radius: 6px;
+
+    }
+
+    #score { font-size: 18px; margin-bottom: 20px; color: #2c3e50; }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+<h2>🧠 Drag & Drop Game: Excretion in Humans</h2>
+
+<p>Drag each question to the correct answer box.</p>
+
+<div id="score">Score: 0</div>
+
+<div class="container">
+
+  <div class="column">
+
+    <h3>Questions</h3>
+
+    <div id="questions"></div>
+
+  </div>
+
+  <div class="column">
+
+    <h3>Answers</h3>
+
+    <div id="answers"></div>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+const qaPairs = [
+
+  { id: "q1", question: "Where is urea formed?", answer: "Urea is formed in the liver" },
+
+  { id: "q2", question: "What is urea made from?", answer: "Excess amino acids" },
+
+  { id: "q3", question: "Which organ excretes carbon dioxide?", answer: "The lungs" },
+
+  { id: "q4", question: "State 3 things that the kidneys excrete", answer: "- Urea - Excess water - Excess ions" },
+
+  { id: "q5", question: "Describe the role of the liver in dealing with excess amino acids", answer: "Excess amino acids are converted into different proteins and any unused amino acids must be converted to urea to be excreted" },
+
+  { id: "q6", question: "What is deamination?", answer: "The removal of the amine group in an amino acid to create urea" },
+
+  { id: "q7", question: "Why is excretion necessary?", answer: "To remove toxic waste substances like urea and carbon dioxide which can be harmful to the body" },
+
+  { id: "q8", question: "What is the function of the glomerulus in the kidney?", answer: "To filter out small molecules from the blood (e.g water, urea, glucose and salts)" },
+
+  { id: "q9", question: "What molecules does the nephron reabsorb?", answer: "- All glucose - Most of the water - Some of the salts" },
+
+  { id: "q10", question: "What is urine made of?", answer: "- Excess water - Urea - Excess ions" }
+
+];
+
+
+
+let score = 0;
+
+let correctCount = 0;
+
+function updateScore() {
+
+  document.getElementById("score").innerText = `Score: ${score}`;
+
+}
+
+
+
+function shuffle(array) {
+
+  for (let i = array.length - 1; i > 0; i--) {
+
+    const j = Math.floor(Math.random() * (i + 1));
+
+    [array[i], array[j]] = [array[j], array[i]];
+
+  }
+
+  return array;
+
+}
+
+
+
+function createElements() {
+
+  const questionsContainer = document.getElementById("questions");
+
+  const answersContainer = document.getElementById("answers");
+
+
+
+  const shuffledQs = shuffle([...qaPairs]);
+
+  const shuffledAs = shuffle([...qaPairs]);
+
+
+
+  shuffledQs.forEach(item => {
+
+    const div = document.createElement("div");
+
+    div.className = "draggable";
+
+    div.id = item.id;
+
+    div.textContent = item.question;
+
+    div.draggable = true;
+
+    div.addEventListener("dragstart", function (e) {
+
+      e.dataTransfer.setData("text", e.target.id);
+
+    });
+
+    questionsContainer.appendChild(div);
+
+  });
+
+
+
+  shuffledAs.forEach(item => {
+
+    const div = document.createElement("div");
+
+    div.className = "droptarget";
+
+    div.dataset.answer = item.id;
+
+    div.textContent = item.answer;
+
+    div.ondrop = drop;
+
+    div.ondragover = allowDrop;
+
+    answersContainer.appendChild(div);
+
+  });
+
+}
+
+
+
+function allowDrop(ev) {
+
+  ev.preventDefault();
+
+}
+
+
+
+function drop(ev) {
+
+  ev.preventDefault();
+
+  const data = ev.dataTransfer.getData("text");
+
+  const dragged = document.getElementById(data);
+
+  const target = ev.target;
+
+  if (target.dataset.answer === data && dragged.parentElement !== target) {
+
+    target.appendChild(dragged);
+
+    dragged.setAttribute("draggable", false);
+
+    dragged.style.backgroundColor = "#c8e6c9";
+
+    score++;
+
+    correctCount++;
+
+    updateScore();
+
+    if (correctCount === qaPairs.length) {
+
+      alert("🎉 Congratulations! You've matched all correctly!");
+
+    }
+
+  } else if (target.dataset.answer !== data) {
+
+    alert("❌ That's not the correct answer.");
+
+    score = Math.max(0, score - 1);
+
+    updateScore();
+
+  }
+
+}
+
+
+
+createElements();
+
+updateScore();
+
+</script>
+
+
+
+</body>
+
+</html>
