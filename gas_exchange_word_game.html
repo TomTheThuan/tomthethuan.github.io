@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag & Drop: Biology Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .column {
+      flex: 1;
+      min-width: 45%;
+    }
+    .draggable, .droptarget {
+      border-radius: 10px;
+      padding: 15px;
+      margin: 12px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .draggable {
+      background: #ffffff;
+      border: 2px solid #3498db;
+      cursor: move;
+      transition: background-color 0.3s ease;
+    }
+    .droptarget {
+      min-height: 60px;
+      background: #f0fff0;
+      border: 2px dashed #2ecc71;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s ease;
+    }
+    #score {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #34495e;
+    }
+  </style>
+</head>
+<body>
+
+<h2>ð§  Biology Drag & Drop: Gas Exchange & Respiration</h2>
+<p>Match each question to its correct answer. +1 for correct, -1 for wrong.</p>
+<div id="score">Score: 0</div>
+
+<div class="container">
+  <div class="column" id="questions">
+    <h3>â Questions</h3>
+  </div>
+  <div class="column" id="answers">
+    <h3>â Answers</h3>
+  </div>
+</div>
+
+<script>
+const qaPairs = [
+  { id: "q1", question: "Describe the structure of the lungs", answer: "- The trachea branches into two bronchi<br>- The bronchi branch into bronchioles<br>- These bronchioles end in alveoli which are lined with capillaries for exchange" },
+  { id: "q2", question: "Write the word equation for aerobic respiration", answer: "Glucose + Oxygen â Carbon dioxide + Water" },
+  { id: "q3", question: "What is respiration?", answer: "A series of reactions that use enzymes to obtain energy in the form of ATP from larger molecules (e.g. glucose)" },
+  { id: "q4", question: "Define aerobic respiration", answer: "Chemical reactions in cells that use oxygen to break down molecules to release energy" },
+  { id: "q5", question: "What is the purpose of the cartilage in the trachea?", answer: "The cartilage supports the trachea and prevents it from closing" },
+  { id: "q6", question: "What builds up in muscles during periods of vigorous exercise?", answer: "Lactic acid" },
+  { id: "q7", question: "What is the percentage composition of nitrogen, oxygen and carbon dioxide in inhaled air?", answer: "Nitrogen 79%<br>Oxygen 21%<br>Carbon dioxide 0.04%" },
+  { id: "q8", question: "What are the features of an efficient gas exchange surface?", answer: "- Large surface area<br>- Thin (short diffusion distance)<br>- Good blood supply and good ventilation with air to ensure a steep concentration gradient" },
+  { id: "q9", question: "How can limewater be used to test for carbon dioxide?", answer: "Bubble the gas through the limewater. If carbon dioxide is present, the limewater turns cloudy" },
+  { id: "q10", question: "Define anaerobic respiration", answer: "Chemical reactions in cells that break down nutrient molecules to release energy without using oxygen" }
+];
+
+let score = 0;
+let matched = 0;
+
+function updateScore() {
+  document.getElementById("score").innerText = `Score: ${score}`;
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  const dragged = document.getElementById(data);
+  const target = ev.target.closest(".droptarget");
+
+  if (target && target.dataset.answer === data) {
+    target.appendChild(dragged);
+    dragged.setAttribute("draggable", false);
+    dragged.style.backgroundColor = "#c8e6c9";
+    matched++;
+    score++;
+  } else {
+    alert("â That's incorrect.");
+    score = Math.max(0, score - 1);
+  }
+  updateScore();
+  if (matched === qaPairs.length) {
+    alert("ð Well done! You matched all correctly.");
+  }
+}
+
+function renderGame() {
+  const shuffledQs = [...qaPairs].sort(() => 0.5 - Math.random());
+  const shuffledAs = [...qaPairs].sort(() => 0.5 - Math.random());
+  const qCol = document.getElementById("questions");
+  const aCol = document.getElementById("answers");
+
+  shuffledQs.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "draggable";
+    div.id = item.id;
+    div.innerText = item.question;
+    div.draggable = true;
+    div.ondragstart = drag;
+    qCol.appendChild(div);
+  });
+
+  shuffledAs.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "droptarget";
+    div.dataset.answer = item.id;
+    div.innerHTML = item.answer;
+    div.ondrop = drop;
+    div.ondragover = allowDrop;
+    aCol.appendChild(div);
+  });
+}
+
+renderGame();
+updateScore();
+</script>
+
+</body>
+</html>
